@@ -58,7 +58,7 @@ public class AppTest
         Assert.assertEquals(true,pair);
     }
     @Test
-    public static void isPrime(){
+    public void isPrime(){
         int nombre = 1;
         boolean prime = NumberUtils.isPrime(nombre);
 
@@ -66,7 +66,7 @@ public class AppTest
     }
 
     @Test
-    public static void isVoyelle(){
+    public void isVoyelle(){
         char lettre = 'b';
         boolean result = StringUtils.isVoyelleOrNot(lettre);
 
@@ -77,7 +77,7 @@ public class AppTest
      * Effectuez une division. Si on tente une division par 0, renvoyez 0.
      * */
     @Test
-    public static void division(){
+    public void division(){
         int numerator = 1;
         int denumerator = 2;
         double result = NumberUtils.division(numerator,denumerator);
@@ -89,7 +89,7 @@ public class AppTest
      * Cela permet de determiner le numero de controle pour un nombre donné, c'est que ce qui est utilisé votre carte de sécu
      * Pour trouver cette clef, vous devez prendre un nombre, lui retirer 97 et effectuer le module 97.
      */
-    public static void keyControlHealth(){
+    public void keyControlHealth(){
         long numeroSecu = 1921071123456L;
         int key = NumberUtils.keyControlHealth(numeroSecu);
         Assert.assertEquals(15,key);
@@ -99,7 +99,7 @@ public class AppTest
      * Vous avez une liste et devez trouvé le nombre le moins elevée
      * on peux varier cet exercice pour un nombre le plus elevé
      */
-    public static void minListElement(){
+    public void minListElement(){
         //On definit notre liste
         ArrayList<Integer> listInteger = new ArrayList<>();
 
