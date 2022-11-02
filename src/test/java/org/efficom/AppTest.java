@@ -81,7 +81,7 @@ public class AppTest
         int numerator = 1;
         int denumerator = 2;
         double result = NumberUtils.division(numerator,denumerator);
-        Assert.assertEquals(0.5,result);
+        Assert.assertEquals(0.5,result,0.0);
     }
 
     /**
