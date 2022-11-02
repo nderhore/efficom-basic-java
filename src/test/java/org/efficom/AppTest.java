@@ -41,7 +41,7 @@ public class AppTest
      * Calculez la moyenne du tableau
      */
     @Test
-    public static void avgArrayNote()
+    public void avgArrayNote()
     {
         double[] note = new double[10];
         //TODO : generer 10 double random et remplir votre tableau de notes
@@ -51,7 +51,7 @@ public class AppTest
     }
 
     @Test
-    public static void isPair(){
+    public void isPair(){
         int nombre = 2;
         boolean pair = NumberUtils.isPair(nombre);
 
