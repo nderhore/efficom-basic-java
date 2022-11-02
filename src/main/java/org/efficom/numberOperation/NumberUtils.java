@@ -1,5 +1,7 @@
 package org.efficom.numberOperation;
 
+import java.sql.PreparedStatement;
+
 public class NumberUtils {
 
     /**
@@ -8,7 +10,14 @@ public class NumberUtils {
      * @return
      */
     public static boolean isPair(int nombre) {
-        return false;
+        boolean result;
+        if(nombre %2 == 0){
+            result = true;
+        }
+        else {
+            result = false;
+        }
+        return  result;
     }
 
     /**
@@ -19,7 +28,15 @@ public class NumberUtils {
      * @return
      */
     public static boolean isPrime(int nombre) {
-        return false;
+        if (nombre <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(nombre); i++) {
+            if (nombre % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
@@ -29,7 +46,14 @@ public class NumberUtils {
      * @return
      */
     public static double division(int numerator, int denumerator) {
-        return 0.0;
+        double result = 0.0;
+        if(denumerator == 0){
+            result = 0.0;
+        }
+        else{
+            result = (double) numerator/denumerator;
+        }
+        return result;
     }
 
     /**
@@ -38,6 +62,6 @@ public class NumberUtils {
      * @return
      */
     public static int keyControlHealth(long numeroSecu) {
-        return 0;
+        return 97 - (int) (numeroSecu % 97);
     }
 }

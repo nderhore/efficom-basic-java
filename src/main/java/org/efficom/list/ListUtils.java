@@ -10,6 +10,16 @@ public class ListUtils {
      * @return
      */
     public static int minListElement(ArrayList<Integer> listInteger) {
-        return 0;
+
+        int min = 15;
+        for(Integer i : listInteger){
+            if (i < min){
+                min = i;
+            }
+        }
+        return min;
+
+        //deuxieme ecriture
+        // return listInteger.stream().min(Integer::compare).get();
     }
 }

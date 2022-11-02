@@ -10,7 +10,12 @@ public class ArrayUtils {
      * @return
      */
     public static double avgArrayNote(double[] notes){
-        return 0.0;
+        double somme = 0;
+        for(double i : notes){
+            somme +=i;
+        }
+        double result = somme / notes.length;
+        return result;
     }
 
 
