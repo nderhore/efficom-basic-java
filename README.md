@@ -13,7 +13,7 @@ Exercice basique en Java permettant de traiter :
 
 ## Pre-requis
 
-- [JDK 17](https://adoptium.net/temurin/releases/)
+- [JDK 8](https://adoptium.net/temurin/releases/)
 - [Maven](https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.zip)
 - [IntelliJ, best IDE](https://www.jetbrains.com/idea/download/#section=windows)
 
