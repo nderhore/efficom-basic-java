@@ -89,6 +89,7 @@ public class AppTest
      * Cela permet de determiner le numero de controle pour un nombre donné, c'est que ce qui est utilisé votre carte de sécu
      * Pour trouver cette clef, vous devez prendre un nombre, lui retirer 97 et effectuer le module 97.
      */
+    @Test
     public void keyControlHealth(){
         long numeroSecu = 1921071123456L;
         int key = NumberUtils.keyControlHealth(numeroSecu);
@@ -99,6 +100,7 @@ public class AppTest
      * Vous avez une liste et devez trouvé le nombre le moins elevée
      * on peux varier cet exercice pour un nombre le plus elevé
      */
+    @Test
     public void minListElement(){
         //On definit notre liste
         ArrayList<Integer> listInteger = new ArrayList<>();
